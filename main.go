@@ -3,12 +3,13 @@ package main
 import (
 	"html/template"
 	"io"
+	"log"
 	"net/http"
 	"os"
 )
 
 //Compile templates on start.
-var templates = template.Must(template.ParseFiles("tmpl/upload.html"))
+var templates = template.Must(template.ParseFiles("./tmpl/upload.html"))
 
 //Display template name.
 func display(w http.ResponseWriter, tmpl string, data interface{}) {
@@ -76,6 +77,7 @@ func main() {
 	//static file handler.
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 
-	//Listen on port 8080
-	http.ListenAndServe(":4300", nil)
+	//Listen on port 4300.
+	log.Printf("Server start on localhost:4300")
+	http.ListenAndServe("0.0.0.0:4300", nil)
 }

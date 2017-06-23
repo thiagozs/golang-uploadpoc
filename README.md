@@ -8,7 +8,7 @@ Go POC Upload Multifiles
 $ go run main.go
 ```
 
-Open the browser on http://localhost:4300.
+Open the browser on http://localhost:4300/upload
 
 
 Licence
