@@ -1,16 +1,17 @@
-Go Upload Multi files POC
+Go POC Upload Multifiles
 ---
 
-***Proof of concept*** of upload files with *golang* and *templates*.
+***Proof of concept*** of upload files with **golang** and **templates**.
 
 ### Run the project
 ```sh
 $ go run main.go
 ```
 
-Open te browser on http://localhost:4300
-Have fun!
+Open the browser on http://localhost:4300.
 
+
+Licence
 ---
 
 The MIT License (MIT)
